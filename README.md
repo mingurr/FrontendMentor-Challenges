@@ -8,7 +8,6 @@ I focus on building responsive UIs, improving accessibility, and designing reusa
 ## Tech Stack (May vary by challenge)
 - HTML / CSS / JavaScript
 - React / TypeScript
-- Next.js 
 - Styled-components or Tailwind CSS
 - ESLint / Prettier
 
