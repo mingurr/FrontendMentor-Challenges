@@ -6,7 +6,6 @@ Frontend Mentor 챌린지 풀이 레포지토리입니다.
 ## Tech Stack
 - HTML / CSS / JavaScript
 - React / TypeScript
-- Next.js (if used)
 - Styled-components or Tailwind CSS
 - ESLint / Prettier
 
