@@ -1,0 +1,106 @@
+:root {
+    /* color */
+    --grey-700 : hsl(0, 0%, 20%);
+    --grey-800 : hsl(0, 0%, 12%);
+    --grey-900 : hsl(0, 0%, 8%);
+    --green : hsl(75, 94%, 57%);
+    --white : hsl(0, 0%, 100%);
+}
+
+* {
+    font-family: "Inter";
+    margin: 0;
+    color: var(--white);
+}
+
+
+body {
+    background-color: var(--grey-900);
+    margin: 0 auto;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+.container {
+    background-color: var(--grey-800);
+    width: 330px;
+    height: 550px;
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    box-sizing: border-box;
+    border-radius: 7px;
+    
+}
+
+.user_image img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    
+}
+
+.description h2 {
+    margin-top: 20px;
+    font-weight: 500;
+}
+
+.description h5 {
+    margin-top: 10px;
+    color: var(--green);
+    font-weight: 500;
+}
+
+.description p {
+    margin: 30px 0;
+    font-size: 12px;
+    font-weight: 300;
+}
+
+button {
+    background: none;
+    border: 0;
+    border-radius: 7px;
+    background-color: var(--grey-700);
+    padding: 10px 0;
+    margin: 8px 0;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.snsButtons {
+    
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+}
+
+button:hover {
+    background-color: var(--green);
+    color: black;
+    cursor: pointer;
+}
+
+.attribution {
+    font-size: 11px; 
+    text-align: center; 
+    color: hsl(228, 45%, 44%); 
+    margin-top: 10px;
+}
+
+@media (max-width: 375px){ 
+    .container {
+        width: 300px;
+    }
+  }
