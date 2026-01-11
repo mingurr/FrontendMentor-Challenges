@@ -109,100 +109,31 @@ button img {
 
 
 
-@media all and (max-width:479px){
 
-    body {
-        height: 100vh;
-      
-        background-color: var(--Purple-100);
-        background-image: url("assets/images/background-pattern-desktop.svg");
-        background-repeat: no-repeat;
-        background-position: top center;
-        background-size: 300% auto;
-      
-        display: flex;
-        align-items: center;
-        justify-content: center;
-      }
-      
-      .container {
-          font-family: WorkSans;
-        width: 280px;
-        background-color: var(--White);
-        padding: 20px;
-        border-radius: 20px;
-      }
-      
-      .question {
-          padding: 18px 0;
-          border-bottom: 1px solid var(--Purple-100);
+
+    @media (max-width: 479px) {
+        body {
+          background-size: 300% auto;
         }
-        
-        .question:last-child {
-          border-bottom: none;
-        }
-        
       
-      .title {
-          display: flex;
-      }
-      
-      .title img {
-          width: 1.75rem;
-          margin-right: 1rem;
-      }
-      
-      .title h1 {
-          font-size: 2rem;
-          font-weight: 700;
-          color: var(--Purple-950);
-         
-          margin: 10px 0
-      }
-      
-      button {
-          background: none;
-          border: none;
+        .container {
           width: 100%;
-          display: flex;
-          justify-content: space-between;
-          align-items: center;
-          
-      }
+          max-width: 280px;
+          padding: 20px;
+        }
       
-      button span {
-          font-family: WorkSans;
-          font-weight: 600;
-          font-size: 1rem;
-          color: var(--Purple-950);
-          word-wrap: break-word;
+        .title h1 {
+          font-size: 2rem;
+        }
+      
+        button span {
+          overflow-wrap: anywhere;
           text-align: left;
-      }
+        }
       
-      button img {
-          width: 1.75rem;
+        button img {
           margin-left: 20px;
-      }
-      
-      .answer {
-          display: none;
-          margin: 30px 0;
-          padding: 1px 6px;
-          font-size: 0.9rem;
-          font-weight: 400;
-          line-height: 1.75;
-          color: var(--Purple-600);
-      
-      }
-      
-      .question.open .answer  {
-          display: block;
-         
-      }
-      
-      .attribution {
-          margin-top: 10px;
+        }
       }
       
 	
-}
