@@ -1,0 +1,54 @@
+:root {
+  /* color */
+  --black: #1c232b;
+  --grey: #6c7289;
+  --cream: #f2eae2;
+  --white: #ffffff;
+  --green-500: #3d8168;
+  --green-700: #1a4032;
+
+  /* spacing */
+  --space-500: 40px;
+  --space-400: 32px;
+  --space-300: 24px;
+  --space-200: 16px;
+  --space-100: 8px;
+  --space-50: 4px;
+}
+
+.text-preset-1 {
+  font-family: "Fraunces";
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 100%;
+  letter-spacing: 0px;
+}
+
+.text-preset-2 {
+  font-family: "Montserrat";
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 110%;
+  letter-spacing: 0px;
+}
+
+.text-preset-3 {
+  font-family: "Montserrat";
+  font-size: 14px;
+  line-height: 160%;
+  letter-spacing: 0px;
+}
+
+.text-preset-4 {
+  font-family: "Montserrat";
+  font-size: 12px;
+  line-height: 120%;
+  letter-spacing: 5px;
+}
+
+.text-preset-5 {
+  font-family: "Montserrat";
+  font-size: 13px;
+  line-height: 120%;
+  letter-spacing: 0px;
+}
