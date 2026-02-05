@@ -1,3 +1,9 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 :root {
   /* color */
   --black: #1c232b;
@@ -51,4 +57,110 @@
   font-size: 13px;
   line-height: 120%;
   letter-spacing: 0px;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  margin-top: 20px;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+body {
+  background-color: var(--cream);
+  min-height: 100vh;
+
+  margin: 0;
+  padding: 1rem;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+article {
+  width: 350px;
+  border-radius: 8px;
+  overflow: hidden;
+
+  background-color: var(--white);
+}
+
+figure {
+  margin: 0;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+section {
+  padding: var(--space-400);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-300);
+}
+
+.title {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-300);
+}
+
+.category {
+  color: var(--grey);
+  text-transform: uppercase;
+}
+
+p {
+  color: var(--grey);
+}
+
+.pricing {
+  display: flex;
+  align-items: center;
+  gap: var(--space-200);
+}
+
+.discount_price {
+  color: var(--green-500);
+}
+
+.original_price {
+  color: var(--grey);
+  text-decoration: line-through;
+}
+
+button {
+  display: flex;
+  gap: var(--space-100);
+  justify-content: center;
+  padding: var(--space-200) var(--space-400);
+  border: none;
+  border-radius: 8px;
+  background-color: var(--green-500);
+  color: var(--white);
+  font-weight: 700;
+}
+
+@media (min-width: 768px) {
+  article {
+    width: 600px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  figure {
+    height: 100%;
+  }
+
+  img {
+    height: 100%;
+    object-fit: cover;
+  }
 }
