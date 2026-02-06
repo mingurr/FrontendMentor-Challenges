@@ -1,0 +1,53 @@
+:root {
+  /* color */
+  --red: hsl(0, 78%, 62%);
+  --cyan: hsl(180, 62%, 55%);
+  --orange: hsl(34, 97%, 64%);
+  --blue: hsl(212, 86%, 64%);
+  /* spacing */
+  --space-500: 40px;
+  --space-400: 32px;
+  --space-300: 24px;
+  --space-200: 16px;
+  --space-100: 8px;
+}
+
+.text-preset-1 {
+  font: "Poppins";
+  font-size: 36px;
+  line-height: 140%;
+  letter-spacing: 0.25px;
+  font-weight: 600;
+}
+
+.text-preset-2 {
+  font: "Poppins";
+  font-size: 36px;
+  line-height: 140%;
+  letter-spacing: 0.25px;
+  font-weight: 200;
+}
+
+.text-preset-3 {
+  font: "Poppins";
+  font-size: 20px;
+  line-height: 135%;
+  letter-spacing: 0px;
+  font-weight: 600;
+}
+
+.text-preset-4 {
+  font: "Poppins";
+  font-size: 15px;
+  line-height: 140%;
+  letter-spacing: 0px;
+  font-weight: 400;
+}
+
+.text-preset-5 {
+  font: "Poppins";
+  font-size: 13px;
+  line-height: 160%;
+  letter-spacing: 0px;
+  font-weight: 400;
+}
