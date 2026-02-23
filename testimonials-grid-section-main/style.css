@@ -1,0 +1,58 @@
+:root {
+  /* color */
+  --purple-50: hsl(260, 100%, 95%);
+  --purple-300: hsl(264, 82%, 80%);
+  --purple-500: hsl(263, 55%, 52%);
+  --white: hsl(0, 0%, 100%);
+  --grey-100: hsl(214, 17%, 92%);
+  --grey-200: hsl(0, 0%, 81%);
+  --grey-400: hsl(224, 10%, 45%);
+  --grey-500: hsl(217, 19%, 35%);
+  --darkblue: hsl(219, 29%, 14%);
+  --black: hsl(0, 0%, 7%);
+
+  /* space */
+  --space-500: 40px;
+  --space-400: 32px;
+  --space-300: 24px;
+  --space-200: 16px;
+  --space-100: 8px;
+}
+
+.text-preset-1 {
+  font-family: "Barlow Semi Condensed", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 20px;
+  line-height: 120%;
+}
+
+.text-preset-2 {
+  font-family: "Barlow Semi Condensed", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 13px;
+  line-height: 110%;
+}
+
+.text-preset-3 {
+  font-family: "Barlow Semi Condensed", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 13px;
+  line-height: 140%;
+}
+
+.text-preset-4 {
+  font-family: "Barlow Semi Condensed", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 11px;
+  line-height: 110%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-size: 13px;
+}
