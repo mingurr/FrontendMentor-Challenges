@@ -1,0 +1,132 @@
+:root {
+  /* color */
+  --cyan-600: #4d96a9;
+  --cyan-300: #8fe3f9;
+  --purple-600: #855fb1;
+  --purple-300: #d9b8ff;
+  --slate-900: #28283d;
+  --slate-600: #87879d;
+  --slate-300: #d1d1df;
+  --white: #fafafa;
+
+  /* space */
+  --space-1400: 112px;
+  --space-1000: 80px;
+  --space-900: 72px;
+  --space-800: 64px;
+  --space-700: 56px;
+  --space-500: 40px;
+  --space-400: 32px;
+  --space-300: 24px;
+  --space-200: 16px;
+  --space-100: 8px;
+  --space-50: 4px;
+}
+
+.text-preset-1 {
+  font-weight: 900;
+  font-size: 64px;
+  line-height: 110%;
+}
+
+.mobile-text-preset-1 {
+  font-weight: 900;
+  font-size: 40px;
+  line-height: 110%;
+}
+.text-preset-2 {
+  font-weight: 900;
+  font-size: 40px;
+  line-height: 110%;
+}
+.movile-text-preset-2 {
+  font-weight: 900;
+  font-size: 32px;
+  line-height: 110%;
+}
+.text-preset-3 {
+  font-weight: 900;
+  font-size: 16px;
+  line-height: 110%;
+  letter-spacing: 4px;
+}
+.mobile-text-preset-3 {
+  font-weight: 900;
+  font-size: 12px;
+  line-height: 110%;
+  letter-spacing: 4px;
+}
+.text-preset-4 {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 110%;
+}
+.tablet-text-preset-4 {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 110%;
+}
+.text-preset-5 {
+  font-weight: 900;
+  font-size: 16px;
+  line-height: 150%;
+}
+
+.btn-blue {
+  background-color: var(--cyan-600);
+  color: var(--white);
+  padding: 16px 40px;
+  border-radius: 29px;
+  border: none;
+}
+
+.btn-blue:hover {
+  background-color: var(--cyan-300);
+}
+
+.btn-purple {
+  background-color: var(--purple-600);
+  color: var(--white);
+  padding: 16px 40px;
+  border-radius: 29px;
+  border: none;
+}
+
+.btn-purple:hover {
+  background-color: var(--purple-300);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Red Hat Display";
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+}
+
+.logo {
+  margin-top: 48px;
+  align-self: center;
+}
+
+header {
+  text-align: center;
+  overflow: hidden;
+}
+
+.header-padding {
+  padding: var(--space-400);
+}
+
+.people {
+  width: 110%;
+  object-position: center;
+  margin-top: var(--space-800);
+}
