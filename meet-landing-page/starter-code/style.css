@@ -39,7 +39,7 @@
   font-size: 40px;
   line-height: 110%;
 }
-.movile-text-preset-2 {
+.mobile-text-preset-2 {
   font-weight: 900;
   font-size: 32px;
   line-height: 110%;
@@ -121,12 +121,125 @@ header {
   overflow: hidden;
 }
 
-.header-padding {
+.people {
+  width: 100%;
+  height: 160px;
+  background-image: url("./assets/tablet/image-hero.png");
+  background-size: auto 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin-top: var(--space-800);
+}
+
+.hero-section {
   padding: var(--space-400);
 }
 
-.people {
-  width: 110%;
-  object-position: center;
-  margin-top: var(--space-800);
+.hero-section > * + * {
+  margin-top: var(--space-300);
+}
+
+.hero-section p {
+  color: var(--slate-600);
+}
+
+.btn-container .btn-purple {
+  margin-top: var(--space-200);
+}
+
+section {
+  margin-bottom: var(--space-800);
+  padding: var(--space-400);
+  padding-bottom: var(--space-500);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-800);
+}
+
+.step-number {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 56px;
+}
+
+.step-line {
+  width: 1px;
+  height: 84px;
+  background-color: var(--slate-300);
+}
+
+.step-circle {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  border: 1px solid var(--slate-300);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--slate-600);
+  font-weight: 900;
+  background-color: var(--white);
+}
+
+.images {
+  width: 100%;
+  display: grid;
+  gap: var(--space-200);
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+}
+
+.images img {
+  width: 100%;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.descriptions {
+  text-align: center;
+}
+
+.descriptions .small-text {
+  margin-bottom: var(--space-200);
+  color: var(--cyan-600);
+  text-transform: uppercase;
+}
+
+.descriptions .main-text {
+  margin-top: var(--space-400);
+  color: var(--slate-600);
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+footer .step-number {
+  position: relative;
+  z-index: 1;
+}
+
+.footer-contents {
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: linear-gradient(
+      rgba(77, 150, 169, 0.85),
+      rgba(77, 150, 169, 0.85)
+    ),
+    url(./assets/mobile/image-footer.jpg);
+  padding: var(--space-800) var(--space-400);
+  margin-top: -28px;
+  color: var(--white);
+  text-align: center;
+  position: relative;
+  z-index: 0;
+}
+
+.footer-contents p {
+  margin: var(--space-300) 0;
 }
