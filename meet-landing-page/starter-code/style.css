@@ -25,32 +25,17 @@
 
 .text-preset-1 {
   font-weight: 900;
-  font-size: 64px;
+  font-size: 40px;
   line-height: 110%;
 }
 
-.mobile-text-preset-1 {
-  font-weight: 900;
-  font-size: 40px;
-  line-height: 110%;
-}
 .text-preset-2 {
-  font-weight: 900;
-  font-size: 40px;
-  line-height: 110%;
-}
-.mobile-text-preset-2 {
   font-weight: 900;
   font-size: 32px;
   line-height: 110%;
 }
+
 .text-preset-3 {
-  font-weight: 900;
-  font-size: 16px;
-  line-height: 110%;
-  letter-spacing: 4px;
-}
-.mobile-text-preset-3 {
   font-weight: 900;
   font-size: 12px;
   line-height: 110%;
@@ -64,7 +49,7 @@
 .tablet-text-preset-4 {
   font-weight: 500;
   font-size: 16px;
-  line-height: 110%;
+  line-height: 150%;
 }
 .text-preset-5 {
   font-weight: 900;
@@ -88,6 +73,7 @@
   background-color: var(--purple-600);
   color: var(--white);
   padding: 16px 40px;
+  margin: 0;
   border-radius: 29px;
   border: none;
 }
@@ -143,7 +129,7 @@ header {
   color: var(--slate-600);
 }
 
-.btn-container .btn-purple {
+.btn-container {
   margin-top: var(--space-200);
 }
 
@@ -242,4 +228,94 @@ footer .step-number {
 
 .footer-contents p {
   margin: var(--space-300) 0;
+}
+
+/* 태블릿 */
+@media (min-width: 768px) {
+  .text-preset-1 {
+    font-weight: 900;
+    font-size: 48px;
+    line-height: 110%;
+  }
+
+  .text-preset-2 {
+    font-weight: 900;
+    font-size: 36px;
+    line-height: 110%;
+  }
+
+  .text-preset-3 {
+    font-weight: 900;
+    font-size: 14px;
+    line-height: 110%;
+    letter-spacing: 4px;
+  }
+
+  .people {
+    height: 303px;
+  }
+
+  .hero-section {
+    margin: var(--space-900) 0;
+    padding: 0 185px;
+  }
+
+  .btn-purple {
+    margin-left: 17px;
+  }
+
+  .btn-container {
+    margin-top: var(--space-300);
+  }
+
+  section {
+    padding: var(--space-700) var(--space-500);
+  }
+
+  .images {
+    width: 100%;
+    display: grid;
+    gap: var(--space-300);
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: none;
+  }
+
+  .descriptions {
+    width: 500px;
+  }
+
+  .footer-contents {
+    width: 100%;
+    padding: var(--space-800) var(--space-1400);
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: linear-gradient(
+        rgba(77, 150, 169, 0.85),
+        rgba(77, 150, 169, 0.85)
+      ),
+      url(./assets/tablet/image-footer.jpg);
+  }
+}
+
+/* 데스크탑 */
+@media (min-width: 1024px) {
+  .text-preset-1 {
+    font-weight: 900;
+    font-size: 64px;
+    line-height: 110%;
+  }
+
+  .text-preset-2 {
+    font-weight: 900;
+    font-size: 40px;
+    line-height: 110%;
+  }
+
+  .text-preset-3 {
+    font-weight: 900;
+    font-size: 16px;
+    line-height: 110%;
+    letter-spacing: 4px;
+  }
 }
