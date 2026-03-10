@@ -41,12 +41,8 @@
   line-height: 110%;
   letter-spacing: 4px;
 }
+
 .text-preset-4 {
-  font-weight: 500;
-  font-size: 18px;
-  line-height: 110%;
-}
-.tablet-text-preset-4 {
   font-weight: 500;
   font-size: 16px;
   line-height: 150%;
@@ -105,6 +101,11 @@ main {
 header {
   text-align: center;
   overflow: hidden;
+}
+
+.faces-left,
+.faces-right {
+  display: none;
 }
 
 .people {
@@ -210,7 +211,7 @@ footer .step-number {
 }
 
 .footer-contents {
-  background-size: 100%;
+  background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   background-image: linear-gradient(
@@ -287,7 +288,6 @@ footer .step-number {
   .footer-contents {
     width: 100%;
     padding: var(--space-800) var(--space-1400);
-    background-size: 100%;
     background-position: center;
     background-repeat: no-repeat;
     background-image: linear-gradient(
@@ -317,5 +317,80 @@ footer .step-number {
     font-size: 16px;
     line-height: 110%;
     letter-spacing: 4px;
+  }
+
+  .text-preset-4 {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 110%;
+  }
+
+  .logo {
+    margin-top: var(--space-1000);
+  }
+
+  .people {
+    display: none;
+  }
+
+  header {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+    overflow: hidden;
+  }
+
+  .faces-left img,
+  .faces-right img {
+    width: 100%;
+  }
+
+  .faces-left {
+    display: block;
+    justify-self: start;
+  }
+
+  .faces-right {
+    display: block;
+    justify-self: end;
+  }
+
+  .hero-section {
+    text-align: center;
+    padding: 0 var(--space-400);
+  }
+
+  section {
+    padding: var(--space-700) 160px;
+  }
+
+  .footer-contents {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 445px 335px 256px;
+    gap: var(--space-400);
+    align-items: center;
+    overflow: hidden;
+    text-align: left;
+    padding: var(--space-1400) 160px;
+    background-position: left;
+    background-repeat: no-repeat;
+    background-image: linear-gradient(
+        rgba(77, 150, 169, 0.85),
+        rgba(77, 150, 169, 0.85)
+      ),
+      url(./assets/desktop/image-footer.jpg);
+  }
+
+  .footer-contents button {
+    justify-self: end;
+  }
+
+  .footer-contents p,
+  .footer-contents h2 {
+    justify-self: start;
+  }
+
+  footer .step-number {
   }
 }
