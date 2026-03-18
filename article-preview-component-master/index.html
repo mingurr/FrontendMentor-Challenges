@@ -11,6 +11,12 @@
       href="./images/favicon-32x32.png"
     />
     <link rel="stylesheet" href="./style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap"
+      rel="stylesheet"
+    />
     <script defer src="./main.js"></script>
 
     <title>Frontend Mentor | Article preview component</title>
@@ -27,21 +33,31 @@
   </head>
   <body>
     <main>
-      <img src="./images/drawers.jpg" />
+      <img
+        class="decoration-img"
+        src="./images/drawers.jpg"
+        alt="green table with a vase"
+      />
       <section>
-        <div>
-          Shift the overall look and feel by adding these wonderful touches to
-          furniture in your home
+        <div class="text-content">
+          <div class="title text-preset-1">
+            Shift the overall look and feel by adding these wonderful touches to
+            furniture in your home
+          </div>
+          <div class="description text-preset-2-medium">
+            Ever been in a room and felt like something was missing? Perhaps it
+            felt slightly bare and uninviting. I’ve got some simple tips to help
+            you make any room feel complete.
+          </div>
         </div>
-        <div>
-          Ever been in a room and felt like something was missing? Perhaps it
-          felt slightly bare and uninviting. I’ve got some simple tips to help
-          you make any room feel complete.
-        </div>
-        <div>
-          <img src="./images/avatar-michelle.jpg" />
-          <div>Michelle Appleton</div>
-          <div>28 Jun 2020</div>
+        <div class="profile">
+          <div class="profile-main">
+            <img src="./images/avatar-michelle.jpg" alt="profile picture" />
+            <div class="profile-text">
+              <div class="name text-preset-2-bold">Michelle Appleton</div>
+              <div class="date text-preset-2-medium">28 Jun 2020</div>
+            </div>
+          </div>
           <button><img src="./images/icon-share.svg" /></button>
         </div>
       </section>
