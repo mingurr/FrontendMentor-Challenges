@@ -173,7 +173,70 @@ section {
   gap: 16px;
 }
 
+.share-popover {
+  display: none;
+}
+
 @media (min-width: 768px) {
+  main {
+    display: flex;
+    width: 600px;
+    height: 346px;
+  }
+
+  .decoration-img {
+    width: 230px;
+    height: 100%;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 10px;
+    object-fit: cover;
+    object-position: center 25%;
+  }
+
+  .share-popover {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 10;
+
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+  }
+
+  .active {
+    position: absolute;
+    top: 210px;
+    left: 428px;
+    width: 248px;
+    height: 55px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 10px;
+    box-sizing: border-box;
+    background-color: var(--color-grey-900);
+    padding: 18px 38px;
+
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+  }
+
+  .share-popover::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 10px solid var(--color-grey-900);
+  }
 }
 
 @media (min-width: 1024px) {
