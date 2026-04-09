@@ -1,4 +1,5 @@
 @import url(/article-preview-component-master/reset.css);
+@import url(./reset.css);
 
 :root {
   --color-white: #ffffff;
@@ -18,15 +19,8 @@
   --space-900: 72px;
   --space-1300: 104px;
 }
-.text-preset-1 {
-  font-family: "Roboto", sans-serif;
-  font-size: 56px;
-  line-height: 100%;
-  letter-spacing: 0px;
-  font-weight: 700;
-}
 
-.text-preset-1-mobile {
+.text-preset-1 {
   font-family: "Roboto", sans-serif;
   font-size: 40px;
   line-height: 100%;
@@ -66,7 +60,78 @@
   font-weight: 400;
 }
 
+main {
+  display: flex;
+  flex-direction: column;
+}
+
+.contents-container {
+  margin: var(--space-500) var(--space-300);
+}
+
+.text-container {
+  margin-bottom: var(--space-500);
+}
+
+.text-container > * + * {
+  margin-top: var(--space-300);
+}
+
+li {
+  display: flex;
+}
+
+li::before {
+  content: url(./assets/images/icon-list.svg);
+  margin-right: var(--space-200);
+}
+
+li + li {
+  margin-top: var(--space-100);
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  margin-bottom: var(--space-100);
+}
+
+input {
+  margin-bottom: var(--space-300);
+  padding: var(--space-200) var(--space-300);
+  border-radius: 10px;
+  border: solid 1px var(--color-grey);
+}
+
+input:focus {
+  border-color: var(--color-blue-800);
+}
+
+.submit-btn {
+  margin-bottom: var(--space-300);
+  padding: var(--space-200) var(--space-300);
+  border-radius: 10px;
+  border: none;
+  background-color: var(--color-blue-800);
+  color: var(--color-white);
+  box-sizing: content-box;
+}
+
+.success-message {
+  display: none;
+}
+
 @media (min-width: 768px) {
+  .text-preset-1 {
+    font-family: "Roboto", sans-serif;
+    font-size: 56px;
+    line-height: 100%;
+    letter-spacing: 0px;
+    font-weight: 700;
+  }
 }
 
 @media (min-width: 1024px) {
