@@ -48,7 +48,7 @@
             placeholder="email@company.com "
           />
 
-          <button class="submit-btn text-preset-2-bold">
+          <button class="submit-btn text-preset-2-bold" type="button">
             Subscribe to monthly newsletter
           </button>
         </form>
@@ -56,14 +56,20 @@
     </main>
 
     <!-- Success message -->
-    <div class="success-message">
-      <img />
-      <h1>Thanks for subscribing!</h1>
-      <p>
-        A confirmation email has been sent to ash@loremcompany.com. Please open
-        it and click the button inside to confirm your subscription.
-      </p>
-      <button>Dismiss message</button>
+    <div class="success-view">
+      <div class="success-message">
+        <div class="text-container-message">
+          <img src="./assets/images/icon-success.svg" />
+          <h1 class="text-preset-1">Thanks for subscribing!</h1>
+          <p class="text-preset-2-regular">
+            A confirmation email has been sent to ash@loremcompany.com. Please
+            open it and click the button inside to confirm your subscription.
+          </p>
+        </div>
+        <button class="dismiss-btn text-preset-2-bold" type="button">
+          Dismiss message
+        </button>
+      </div>
     </div>
   </body>
 </html>
