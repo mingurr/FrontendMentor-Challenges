@@ -97,6 +97,13 @@ form {
 
 label {
   margin-bottom: var(--space-100);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.error-msg {
+  color: var(--color-red);
 }
 
 input {
@@ -110,6 +117,11 @@ input:focus {
   border-color: var(--color-blue-800);
 }
 
+input:invalid {
+  border-color: var(--color-red);
+  background-color: rgba(255, 97, 85, 0.1);
+  color: var(--color-red);
+}
 .submit-btn {
   margin-bottom: var(--space-300);
   padding: var(--space-200) var(--space-300);
@@ -118,6 +130,10 @@ input:focus {
   background-color: var(--color-blue-800);
   color: var(--color-white);
   box-sizing: content-box;
+}
+
+.submit-btn:hover {
+  background: linear-gradient(to right, #ff6a3a, #ff527b);
 }
 
 .success-message {
