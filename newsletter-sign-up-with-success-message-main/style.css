@@ -73,6 +73,10 @@ main {
   width: 100%;
 }
 
+.decoration-img {
+  width: 100%;
+}
+
 .contents-container {
   margin: var(--space-500) var(--space-300);
 }
@@ -153,6 +157,7 @@ button:hover {
   width: 327px;
   height: 623px;
   margin: auto;
+  background-color: var(--color-white);
 }
 
 .success-view {
@@ -174,6 +179,40 @@ button:hover {
     line-height: 100%;
     letter-spacing: 0px;
     font-weight: 700;
+  }
+  body {
+    background-color: var(--color-blue-800);
+  }
+
+  main {
+    padding: var(--space-500);
+    border-radius: 36px;
+    width: 100%;
+    max-width: 608px;
+    height: auto;
+    background-color: var(--color-white);
+  }
+
+  .contents-container {
+    margin-bottom: 0;
+  }
+
+  .submit-btn {
+    margin-bottom: 0;
+  }
+
+  .success-message {
+    width: 100%;
+    max-width: 504px;
+    height: auto;
+    padding: var(--space-800);
+    border-radius: 36px;
+    box-sizing: border-box;
+  }
+
+  .dismiss-btn {
+    margin: 0;
+    margin-top: var(--space-400);
   }
 }
 

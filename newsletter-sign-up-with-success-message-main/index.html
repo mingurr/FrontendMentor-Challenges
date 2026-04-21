@@ -25,7 +25,20 @@
   </head>
   <body>
     <main>
-      <img src="./assets/images/illustration-sign-up-mobile.svg" />
+      <picture>
+        <source
+          media="(min-width: 767px)"
+          srcset="./assets/images/illustration-sign-up-tablet.svg"
+        />
+        <source
+          media="(min-width: 1199px)"
+          srcset="./assets/images/illustration-sign-up-desktop.svg"
+        />
+        <img
+          class="decoration-img"
+          src="./assets/images/illustration-sign-up-mobile.svg"
+        />
+      </picture>
       <div class="contents-container">
         <div class="text-container">
           <h1 class="text-preset-1">Stay updated!</h1>
@@ -62,7 +75,8 @@
           <img src="./assets/images/icon-success.svg" />
           <h1 class="text-preset-1">Thanks for subscribing!</h1>
           <p class="text-preset-2-regular">
-            A confirmation email has been sent to ash@loremcompany.com. Please
+            A confirmation email has been sent to
+            <span class="text-preset-2-bold">ash@loremcompany.com.</span> Please
             open it and click the button inside to confirm your subscription.
           </p>
         </div>
