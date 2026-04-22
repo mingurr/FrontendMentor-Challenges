@@ -191,6 +191,7 @@ button:hover {
     max-width: 608px;
     height: auto;
     background-color: var(--color-white);
+    box-sizing: border-box;
   }
 
   .contents-container {
@@ -217,4 +218,20 @@ button:hover {
 }
 
 @media (min-width: 1024px) {
+  main {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    gap: var(--space-800);
+    max-width: 904px;
+    padding: var(--space-400);
+  }
+
+  .contents-container {
+    margin: 0;
+  }
+
+  .text-container {
+    margin-bottom: var(--space-400);
+  }
 }
