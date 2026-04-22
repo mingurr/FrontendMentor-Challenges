@@ -1,3 +1,4 @@
+const form = document.querySelector("form");
 const input = document.querySelector("input");
 const submitBtn = document.querySelector(".submit-btn");
 const errorMsg = document.querySelector(".error-msg");
@@ -25,7 +26,8 @@ input.addEventListener("input", () => {
   }
 });
 
-submitBtn.addEventListener("click", () => {
+form.addEventListener("submit", (e) => {
+  e.preventDefault();
   const isValid = validate(input.value);
 
   if (isValid) {
@@ -39,27 +41,3 @@ dismissBtn.addEventListener("click", () => {
   main.style.display = "flex";
   successView.classList.remove("active");
 });
-
-// input.addEventListener("blur", () => {
-//   const inputValue = input.value.trim();
-
-//   if (!inputValue) return;
-
-//   if (regex.test(inputValue)) {
-//     errorMsg.textContent = "";
-//   } else {
-//     inputError();
-//   }
-// });
-
-// input.addEventListener("input", () => {
-//   if (errorMsg.textContent) {
-//     if (regex.test(input.value.trim())) {
-//       errorMsg.textContent = "";
-//     }
-//   }
-// });
-
-// function inputError() {
-//   errorMsg.textContent = "Valid email required";
-// }

@@ -112,6 +112,14 @@ label {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+.email-address {
+  margin-top: var(--space-100);
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .error-msg {
