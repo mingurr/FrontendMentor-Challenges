@@ -19,7 +19,7 @@
   </head>
   <body>
     <main>
-      <section class="profile-contatiner">
+      <section class="profile-container">
         <div class="profile-card">
           <div class="profile">
             <img src="./images/image-jeremy.png" alt="profile picture" />
@@ -31,17 +31,26 @@
           <nav class="category">
             <ul>
               <li>
-                <button class="category-btn text-preset-5-regular">
+                <button
+                  data-period="daily"
+                  class="category-btn text-preset-5-regular"
+                >
                   Daily
                 </button>
               </li>
               <li>
-                <button class="category-btn text-preset-5-regular">
+                <button
+                  data-period="weekly"
+                  class="category-btn text-preset-5-regular"
+                >
                   Weekly
                 </button>
               </li>
               <li>
-                <button class="category-btn text-preset-5-regular">
+                <button
+                  data-period="monthly"
+                  class="category-btn text-preset-5-regular"
+                >
                   Monthly
                 </button>
               </li>
@@ -50,23 +59,7 @@
         </div>
       </section>
 
-      <section class="cards-container">
-        <article class="card-container">
-          <div class="card-contents">
-            <header class="card-header">
-              <h2 class="text-preset-5-medium">Work</h2>
-              <button>
-                <img src="./images/icon-ellipsis.svg" alt="ellipsis" />
-              </button>
-            </header>
-
-            <div class="card-stats">
-              <div class="current text-preset-3">36hrs</div>
-              <div class="previous text-preset-6">Last Week - 36hrs</div>
-            </div>
-          </div>
-        </article>
-      </section>
+      <section class="cards-container" aria-live="polite"></section>
     </main>
   </body>
 </html>
