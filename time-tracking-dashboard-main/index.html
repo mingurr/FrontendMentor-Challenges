@@ -20,30 +20,52 @@
   <body>
     <main>
       <section class="profile-contatiner">
-        <div class="profile">
-          <img src="./images/image-jeremy.png" alt="profile picture" />
-          <div class="text-preset-4">
-            <span class="text-preset-6">Report for</span> Jeremy Robson
-          </div>
-        </div>
-        <nav class="category">
-          <ul>
-            <li><button class="text-preset-5-regular">Daily</button></li>
-            <li><button class="text-preset-5-regular">Weekly</button></li>
-            <li><button class="text-preset-5-regular">Monthly</button></li>
-          </ul>
-        </nav>
-      </section>
-      <section class="cards-container">
-        <div class="card-container">
-          <button class="text-preset-5-medium">Work</button>
-          <div class="card-stats">
-            <div class="current text-preset-1">36hrs</div>
-            <div class="previous text-preset-6">
-              Last Week <span>36hrs</span>
+        <div class="profile-card">
+          <div class="profile">
+            <img src="./images/image-jeremy.png" alt="profile picture" />
+            <div class="profile-text">
+              <span class="text-preset-6">Report for</span>
+              <p class="text-preset-4">Jeremy Robson</p>
             </div>
           </div>
+          <nav class="category">
+            <ul>
+              <li>
+                <button class="category-btn text-preset-5-regular">
+                  Daily
+                </button>
+              </li>
+              <li>
+                <button class="category-btn text-preset-5-regular">
+                  Weekly
+                </button>
+              </li>
+              <li>
+                <button class="category-btn text-preset-5-regular">
+                  Monthly
+                </button>
+              </li>
+            </ul>
+          </nav>
         </div>
+      </section>
+
+      <section class="cards-container">
+        <article class="card-container">
+          <div class="card-contents">
+            <header class="card-header">
+              <h2 class="text-preset-5-medium">Work</h2>
+              <button>
+                <img src="./images/icon-ellipsis.svg" alt="ellipsis" />
+              </button>
+            </header>
+
+            <div class="card-stats">
+              <div class="current text-preset-3">36hrs</div>
+              <div class="previous text-preset-6">Last Week - 36hrs</div>
+            </div>
+          </div>
+        </article>
       </section>
     </main>
   </body>
