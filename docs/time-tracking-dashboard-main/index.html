@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <link rel="stylesheet" href="./style.css" />
+    <script defer src="./main.js"></script>
+
+    <title>Frontend Mentor | Time tracking dashboard</title>
+  </head>
+  <body>
+    <main>
+      <section class="profile-container">
+        <div class="profile-card">
+          <div class="profile">
+            <img src="./images/image-jeremy.png" alt="profile picture" />
+            <div class="profile-text">
+              <span class="text-preset-6">Report for</span>
+              <p class="text-preset-4">Jeremy Robson</p>
+            </div>
+          </div>
+          <nav class="category">
+            <ul>
+              <li>
+                <button
+                  data-period="daily"
+                  class="category-btn text-preset-5-regular"
+                >
+                  Daily
+                </button>
+              </li>
+              <li>
+                <button
+                  data-period="weekly"
+                  class="category-btn text-preset-5-regular"
+                >
+                  Weekly
+                </button>
+              </li>
+              <li>
+                <button
+                  data-period="monthly"
+                  class="category-btn text-preset-5-regular"
+                >
+                  Monthly
+                </button>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </section>
+
+      <section class="cards-container" aria-live="polite"></section>
+    </main>
+  </body>
+</html>
